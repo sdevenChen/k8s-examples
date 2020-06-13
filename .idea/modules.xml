@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app-examples/app-examples.iml" filepath="$PROJECT_DIR$/app-examples/app-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docker/docker.iml" filepath="$PROJECT_DIR$/docker/docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/external-citation/external-citation.iml" filepath="$PROJECT_DIR$/external-citation/external-citation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/istio/istio.iml" filepath="$PROJECT_DIR$/istio/istio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/k8s-examples.iml" filepath="$PROJECT_DIR$/.idea/k8s-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kubernetes/kubernetes.iml" filepath="$PROJECT_DIR$/kubernetes/kubernetes.iml" />
+    </modules>
+  </component>
+</project>
