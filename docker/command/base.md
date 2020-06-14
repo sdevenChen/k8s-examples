@@ -2,8 +2,8 @@
 说明
 Docker CLI的基本命令。
 
-子命令
-命令	描述
+~~~
+命令	            描述
 docker attach	将本地标准输入，输出和错误流附加到正在运行的容器
 docker build	从Dockerfile构建映像
 docker builder	管理构建
@@ -61,3 +61,4 @@ docker update	更新一个或多个容器的配置
 docker version	显示Docker版本信息
 docker volume	管理卷
 docker wait	    阻塞直到一个或多个容器停止，然后打印其退出代码
+~~~
