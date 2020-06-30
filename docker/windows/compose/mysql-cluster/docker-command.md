@@ -1,0 +1,1 @@
+``docker run -d --restart always --privileged -P --name=mysql -P --network db-net -v D:\app\mysql:/var/lib/mysql -v D:\app\mysqlConf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306  mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci``

@@ -1,0 +1,28 @@
+version: '2.2'
+services:
+  mysql:
+    image: mysql:5.7.30
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=123456
+    volumes:
+      - D:\app\apollo\mysql:/var/lib/mysql
+      - D:\app\apollo\mysqlConf:/etc/mysql/conf.d
+    ports:
+      - "3305:3306"
+  apollo:
+    image: apolloconfig/apollo-configservice
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql:3306
+      - DB_USERNAME=root
+      - DB_PASSWORD=123456
+      - SPRING_DATASOURCE_URL="jdbc:mysql://mysql:3305/ApolloConfigDB?characterEncoding=utf8"
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=123456
+    volumes:
+      - D:\app\apollo\tmp\logs:/opt/logs
+    ports:
+      - "8085:8080"
