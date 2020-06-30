@@ -151,7 +151,12 @@ echo $TOKEN
 Mac: $HOME/.kube/config
 Win: %UserProfile%\.kube\config
 ```
-
+生成新token
+```
+kubectl -n kube-system get secret
+kubectl -n kube-system describe secret deployment-controller-token-frsqj
+kubectl config set-credentials cluster-admin --token = bearer_token
+```
 点击登陆，进入Kubernetes Dashboard
 
 ### 配置 Ingress
