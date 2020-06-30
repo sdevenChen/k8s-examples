@@ -1,0 +1,26 @@
+version: '1'
+services:
+  mysql:
+    image: mysql:5.7.30
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=123456
+    volumes:
+      - D:\app\mysql:/var/lib/mysql
+      - D:\app\mysqlConf:/etc/mysql/conf.d
+    ports:
+      - "3306:3306"
+  bookstack:
+    image: solidnerd/bookstack
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql:3306
+      - DB_USERNAME=root
+      - DB_PASSWORD=123456
+    volumes:
+      - D:\app\bookstack\uploads:/var/www/bookstack/public/uploads
+      - D:\app\bookstack\storage\uploads:/var/www/bookstack/storage/uploads
+    ports:
+      - "8080:8080"

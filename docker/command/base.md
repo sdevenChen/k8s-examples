@@ -19,8 +19,8 @@ docker events	从服务器获取实时事件
 docker exec	    在正在运行的容器中运行命令
 docker export	将容器的文件系统导出为tar存档
 docker history	显示图像的历史记录
-docker image	管理图片
-docker images	列出图片
+docker image	管理镜像
+docker images	列出图镜像
 docker import	从tarball导入内容以创建文件系统映像
 docker info	    显示系统范围的信息
 docker inspect	返回有关Docker对象的低级信息

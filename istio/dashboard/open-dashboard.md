@@ -25,9 +25,15 @@ grafana   10.59.247.103   <none>        3000/TCP   2m
   prometheus  Open Prometheus web UI
   zipkin      Open Zipkin web UI
 ~~~
-打开grafana web-ui
+打开 grafana web-ui
+打开 kiali web-ui
+打开 controlz web-ui
+打开 envoy web-ui
 ~~~
 istioctl dashboard  grafana
+istioctl dashboard kiali
+istioctl dashboard controlz
+istioctl dashboard envoy
 ~~~
 其他weui 执行命令 istioctl dashboard xxx
 
